@@ -1,0 +1,13 @@
+package client
+
+import (
+	govclient "github.com/ayher/project-anatha/x/governance/client"
+	"github.com/ayher/project-anatha/x/treasury/client/cli"
+)
+
+var AddBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitAddBuyBackLiquidityProposal)
+var RemoveBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitRemoveBuyBackLiquidityProposal)
+var BurnDistributionProfitsProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitBurnDistributionProfitsProposal)
+var TransferFromDistributionProfitsToBuyBackLiquidityProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromDistributionProfitsToBuyBackLiquidityProposal)
+var TransferFromTreasuryToSwapEscrowProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromTreasuryToSwapEscrowProposal)
+var TransferFromSwapEscrowToBuyBackProposalHandler = govclient.NewProposalHandler(cli.GetCmdSubmitTransferFromSwapEscrowToBuyBackProposal)
